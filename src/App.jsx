@@ -1,7 +1,12 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <div className="w-full h-screen bg-zinc"></div>;
+  return (
+    <div className="w-full h-screen bg-zinc">
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
