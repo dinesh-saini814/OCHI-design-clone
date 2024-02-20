@@ -10,7 +10,7 @@ function LandingPage() {
             <div className="masker">
               <div className="w-fit flex ">
                 {index === 1 && (
-                  <div className="mr-[1vw] w-[9vw] h-[6vw] rounded-md bg-green-600 relative top-[1.1vw]"></div>
+                  <div className="mr-[1vw] w-[9vw] h-[6vw] rounded-md bg-green-600 relative top-[1.05vw]"></div>
                 )}
                 <h1 className="uppercase text-[9.5vw] leading-[7.3vw] tracking-normal font-['Test_Founders_Grotesk_X_Condensed'] ">
                   {item}
@@ -20,7 +20,7 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="border-t-[1px] font-['Neue_Montreal'] border-zinc-400 mt-24 flex justify-between py-4 px-16">
+      <div className="border-t-[1px] font-['Neue_Montreal'] border-zinc-400 mt-20 flex justify-between py-4 px-16">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
