@@ -6,7 +6,8 @@ export default {
     extend: {
       colors: {
         background: "#f1f1f1",
-        charcoal: "#212121", // Replace with your custom color value
+        charcoal: "#212121",
+        marquee: "rgba(0, 77, 67, 1)", // Replace with your custom color value
       },
     },
   },
