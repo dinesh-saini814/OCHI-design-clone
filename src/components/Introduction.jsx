@@ -8,8 +8,8 @@ function Introduction() {
         to raise funds, sell products, explain complex ideas, and hire great
         people.
       </h1>
-      <div className="w-full border-[1px] border-zinc-600">
-        <div className="flex justify-between p-10">
+      <div className="w-full border-[1px] border-b-[1px] border-zinc-600">
+        <div className="flex justify-between p-10 mb-24">
           <div className="flex ">
             <h2 className="text-[1.5vw] w-fit">What you can expect:</h2>
           </div>
@@ -25,14 +25,18 @@ function Introduction() {
             </p>
           </div>
           <div className="flex flex-col list-none">
-            <p className="text-[1.5vw]">S:</p>
+            <p className="text-[1vw]">S:</p>
             {["Instagram", "Becance", "Facebook", "LinkedIn"].map(
               (item, index) => (
-                <li>{item}</li>
+                <li className="text-[1vw]">{item}</li>
               )
             )}
           </div>
         </div>
+      </div>
+      <div className="w-1/2 ">
+        <h1>Our approach:</h1>
+        <button>Read more</button>
       </div>
     </div>
   );
