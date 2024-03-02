@@ -8,7 +8,7 @@ function Introduction() {
         to raise funds, sell products, explain complex ideas, and hire great
         people.
       </h1>
-      <div className="w-full border-[1px] border-b-[1px] border-zinc-600">
+      <div className="w-full border-t-[1px] border-b-[1px] border-zinc-600">
         <div className="flex justify-between p-10 mb-24">
           <div className="flex ">
             <h2 className="text-[1.5vw] w-fit">What you can expect:</h2>
@@ -34,9 +34,12 @@ function Introduction() {
           </div>
         </div>
       </div>
-      <div className="w-1/2 ">
-        <h1>Our approach:</h1>
-        <button>Read more</button>
+      <div className="w-1/2  pt-210 px-10">
+        <h1 className="text-[4vw] mb-2">Our approach:</h1>
+        <button className="flex w- px-10 py-4 bg-charcoal text-white rounded-full">
+          Read more
+          <div className="w-2 h-2 bg-white rounded-full"></div>
+        </button>
       </div>
     </div>
   );
