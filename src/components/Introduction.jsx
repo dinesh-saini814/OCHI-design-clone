@@ -36,7 +36,7 @@ function Introduction() {
       </div>
       <div className="w-1/2  pt-210 px-10">
         <h1 className="text-[4vw] mb-2">Our approach:</h1>
-        <button className="flex w- px-10 py-4 bg-charcoal text-white rounded-full">
+        <button className="flex gap-10 items-center px-6 py-4 bg-charcoal font-medium text-white rounded-full uppercase text-[1vw]">
           Read more
           <div className="w-2 h-2 bg-white rounded-full"></div>
         </button>
