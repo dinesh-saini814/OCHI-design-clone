@@ -4,6 +4,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      opacity: {
+        1: "0.1",
+        2: "0.2",
+        5: "0.5",
+      },
+
       colors: {
         background: "#f1f1f1",
         charcoal: "#212121",

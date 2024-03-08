@@ -6,7 +6,7 @@ import Introduction from "./components/Introduction";
 
 function App() {
   return (
-    <div className="w-full min-h-screen text-white  bg-background">
+    <div className="w-full min-h-screen text-white bg-background">
       <Navbar />
       <LandingPage />
       <Marquee />
