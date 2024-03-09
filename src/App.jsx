@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
 import Introduction from "./components/Introduction";
 import PlayEyes from "./components/PlayEyes";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Marquee />
       <Introduction />
       <PlayEyes />
+      <Projects />
     </div>
   );
 }
