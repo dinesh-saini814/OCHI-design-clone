@@ -15,9 +15,11 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">vise</p>
           </div>
-          <div className="cardcontainer w-full h-[86vh]">
-            <h1 className="absolute bg-yellow-200 z-10 text-7xl font-['Test_Founders_Grotesk_X_Condensed']">
-              FYDE
+          <div className="cardcontainer relative w-full h-[86vh]">
+            <h1 className="absolute left-full text-[21vh] -translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
+              {"FYDE".split("").map((item, index) => (
+                <span>{item}</span>
+              ))}
             </h1>
             <div className="card w-full h-full overflow-hidden bg-gray-500 rounded-lg">
               <img
@@ -32,7 +34,13 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">vise</p>
           </div>
-          <div className="cardcontainer w-full h-[86vh]">
+          <div className="cardcontainer relative w-full h-[86vh]">
+            <h1 className="absolute right-full text-[21vh] translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
+              {"VISE".split("").map((item, index) => (
+                <span>{item}</span>
+              ))}
+            </h1>
+
             <div className="card w-full h-full overflow-hidden bg-gray-500 rounded-lg">
               <img
                 className="w-full h-full bg-cover"

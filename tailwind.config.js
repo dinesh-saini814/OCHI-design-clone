@@ -4,12 +4,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        primaryfont: ['"Test_Founders_Grotesk_X_Condensed"'],
-        primaryfont: ["/fonts/Inter/Test_Founders_Grotesk_X_Condensed"],
-        secondaryfont: "/fonts/Inter/Neue_Montreal",
-        // Add more custom font families as needed
-      },
       backgroundImage: {
         "play-eye-bg": "url('src/assets/PlayEyes background.jpg')",
       },
@@ -24,6 +18,8 @@ export default {
         charcoal: "#212121",
         marquee: "rgba(0, 77, 67, 1)",
         customGreen: "#CDEA68", // Replace with your custom color value
+        textGreen: "#CDEA68",
+        card: "#004D43",
       },
     },
   },
