@@ -18,7 +18,12 @@ function PlayEyes() {
 
   return (
     <div className="w-full h-screen overflow-hidden">
-      <div className="relative w-full h-full bg-cover bg-center bg-play-eye-bg">
+      <div
+        data-scroll
+        data-scroll-section
+        data-scroll-speed="-.6"
+        className="relative w-full h-full bg-cover bg-center bg-play-eye-bg"
+      >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <div className="w-[15vw] h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">
             <div className="relative w-3/5 h-3/5 bg-zinc-900 rounded-full">

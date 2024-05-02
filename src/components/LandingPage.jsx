@@ -1,16 +1,27 @@
 import React from "react";
 import { HiArrowUpRight } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 function LandingPage() {
   return (
-    <div className="w-full h-screen bg-background text-charcoal pt-1">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.5"
+      className="w-full h-screen bg-background text-charcoal pt-1"
+    >
       <div className="textstructure mt-36 px-14 ">
         {["We Create", "Eye-Opening", "Presentations"].map((item, index) => {
           return (
             <div className="masker">
               <div className="w-fit flex ">
                 {index === 1 && (
-                  <div className="mr-[1vw] w-[9vw] h-[6vw] rounded-md bg-green-600 relative top-[1.05vw]"></div>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className="mr-[1vw] w-[9vw] h-[6vw] rounded-md bg-cover bg-[url('src/assets/content.jpg')] relative top-[1.05vw]"
+                  ></motion.div>
                 )}
                 <h1 className="uppercase text-[9.5vw] leading-[7.3vw] tracking-normal font-['Test_Founders_Grotesk_X_Condensed'] ">
                   {item}
