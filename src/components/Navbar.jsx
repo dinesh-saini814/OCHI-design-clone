@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 function Navbar() {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const controls = useAnimation();
+  const navbarRef = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const isScrolledDown = prevScrollPos < currentScrollPos;
+
+      setVisible(!isScrolledDown);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
+  useEffect(() => {
+    controls.start({ y: visible ? 0 : -navbarRef.current.offsetHeight });
+  }, [visible, controls]);
+
   return (
-    <div className="fixed z-40 w-full px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between">
+    <motion.div
+      ref={navbarRef}
+      initial={{ y: 0 }}
+      animate={controls}
+      transition={{ duration: 0.3 }}
+      className="fixed z-40 w-full px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between"
+      style={{ backdropFilter: visible ? "blur(5px)" : "none" }}
+    >
       <div className="logo">
         <svg
           width="72"
@@ -45,7 +75,7 @@ function Navbar() {
           )
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

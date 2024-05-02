@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import Marquee from "./components/Marquee";
@@ -8,7 +8,6 @@ import Projects from "./components/Projects";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
-import { motion } from "framer-motion";
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();

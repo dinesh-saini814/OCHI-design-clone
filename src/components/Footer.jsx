@@ -2,7 +2,12 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full h-full flex font-['Test_Founders_Grotesk_X_Condensed']">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed=".5"
+      className="footer w-full h-full flex font-['Test_Founders_Grotesk_X_Condensed'] bg-background"
+    >
       <div className="w-1/2 flex flex-col justify-between p-12 text-charcoal ">
         <div className="heading">
           <h1 className="text-9xl uppercase leading-none -mb-8">EYE-</h1>

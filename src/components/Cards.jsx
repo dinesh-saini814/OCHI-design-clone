@@ -2,7 +2,12 @@ import React from "react";
 
 function Cards() {
   return (
-    <div className="w-full h-screen flex items-center px-12 gap-4">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.2"
+      className="w-full h-screen flex items-center px-12 gap-4"
+    >
       <div className="cardcontainer w-1/2 h-[62vh] ">
         <div className="card relative rounded-xl w-full h-full bg-card flex items-center justify-center">
           <img className="h-16" src="src/assets/logo001.svg" alt="" />
