@@ -1,4 +1,5 @@
-import { motion, useAnimation } from "framer-motion";
+import { easeIn, motion, useAnimation } from "framer-motion";
+import { easeInOut } from "framer-motion/dom";
 import React from "react";
 import { RiCircleFill } from "react-icons/ri";
 
@@ -142,7 +143,7 @@ function Projects() {
                   initial={{ y: "100%" }}
                   animate={cards[2]}
                   transition={{
-                    ease: [0.61, 1, 0.88, 1],
+                    ease: [0.33, 1, 0.68, 1],
                     delay: index * 0.02,
                     duration: 0.5,
                   }}
@@ -189,7 +190,11 @@ function Projects() {
                 <motion.span
                   initial={{ y: "100%" }}
                   animate={cards[3]}
-                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.02 }}
+                  transition={{
+                    ease: [0.33, 1, 0.68, 1],
+                    delay: index * 0.02,
+                    duration: 0.5,
+                  }}
                   className="inline-block"
                 >
                   {item}
@@ -222,7 +227,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center py-20 font-['Neue_Montreal'] text-[.9rem]">
+      <div className="flex items-center justify-center pt-20 font-['Neue_Montreal'] text-[.9rem]">
         <button className="w-[16rem] h-14 border-[1px] border-black rounded-full uppercase bg-charcoal text-white flex items-center justify-evenly">
           view all case studies
           <RiCircleFill className=" text-[.6rem] mb-4 mt-4" />
