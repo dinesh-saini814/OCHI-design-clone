@@ -21,7 +21,7 @@ function PlayEyes() {
       <div
         data-scroll
         data-scroll-section
-        data-scroll-speed="-.6"
+        data-scroll-speed="-.5"
         className="relative w-full h-full bg-cover bg-center bg-play-eye-bg"
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
