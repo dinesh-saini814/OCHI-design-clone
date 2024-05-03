@@ -32,8 +32,8 @@ This project is a clone of the OCHI website design. It aims to replicate the vis
 
 ## Images
 
-![Alt Text](src\assets\screenshots\ochi.design1.png)
-![Alt Text](src\assets\screenshots\ochi.design2.png)
+![Alt Text](https://github.com/dinesh-saini814/OCHI-design-clone/blob/main/src/assets/screenshots/ochi.design1.png?raw=true)
+![Alt Text](https://github.com/dinesh-saini814/OCHI-design-clone/blob/main/src/assets/screenshots/ochi.design2.png?raw=true)
 
 ## Usage
 
