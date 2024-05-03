@@ -6,7 +6,7 @@ function Footer() {
       data-scroll
       data-scroll-section
       data-scroll-speed=".2"
-      className="w-full h-full flex font-['Test_Founders_Grotesk_X_Condensed'] bg-background absolute"
+      className="w-full h-full flex font-['Test_Founders_Grotesk_X_Condensed'] bg-background"
     >
       <div className="w-1/2 flex flex-col justify-between p-12 text-charcoal ">
         <div className="heading">
