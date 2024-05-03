@@ -1,10 +1,56 @@
-# React + Vite
+# OCHI Design Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a clone of the OCHI website design. It aims to replicate the visual appearance and functionality of the OCHI website using React and Vite.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Images](#images)
+- [Original Website](#original-website)
 
-# OCHI-design-clone
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/OCHI-design-clone.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd OCHI-design-clone
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Images
+
+![Alt Text](src\assets\screenshots\ochi.design1.png)
+![Alt Text](src\assets\screenshots\ochi.design2.png)
+
+## Usage
+
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   This will start the development server and open the project in your default browser. Any changes you make to the code will automatically trigger a hot module replacement (HMR) and update the browser.
+
+2. Explore the project and make modifications as needed.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## Original Website
+
+The original website of this project can be found at https://ochi.design .
