@@ -6,14 +6,18 @@ function Footer() {
       data-scroll
       data-scroll-section
       data-scroll-speed=".2"
-      className="w-full h-full flex font-['Test_Founders_Grotesk_X_Condensed'] bg-background"
+      className="w-full h-full flex max-[640px]:flex-col font-['Test_Founders_Grotesk_X_Condensed'] bg-background max-[640px]:pt-10"
     >
-      <div className="w-1/2 flex flex-col justify-between p-12 text-charcoal ">
+      <div className="w-1/2 flex flex-col  justify-between px-5 lg:p-12 text-charcoal ">
         <div className="heading">
-          <h1 className="text-9xl uppercase leading-none -mb-8">EYE-</h1>
-          <h1 className="text-9xl uppercase leading-none ">OPENING</h1>
+          <h1 className="lg:text-9xl max-[640px]:font-bold text-5xl max-[640px]:tracking-tighter uppercase leading-none max-[640px]:mb-8">
+            EYE-
+          </h1>
+          <h1 className="lg:text-9xl max-[640px]:font-bold text-5xl max-[640px]:tracking-tighter uppercase leading-none ">
+            OPENING
+          </h1>
         </div>
-        <svg
+        {/* <svg
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -40,12 +44,14 @@ function Footer() {
             d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z"
             fill="currentColor"
           ></path>
-        </svg>
+        </svg> */}
       </div>
-      <div className="w-1/2 text-charcoal ">
-        <h1 className="text-9xl py-12 leading-none">PRESENTATIONS</h1>
-        <div className="">
-          <div className="details flex flex-col font-['Neue_Montreal']">
+      <div className=" text-charcoal ">
+        <h1 className="lg:text-9xl max-[640px]:font-bold text-5xl max-[640px]:tracking-tighter lg:py-12 leading-none px-5 lg:px-0">
+          PRESENTATIONS
+        </h1>
+        <div className="px-5 lg:px-0">
+          <div className="details flex flex-col font-['Neue_Montreal'] ">
             {["S:", "Instagram", "Behance", "Facebook", "Linkedin"].map(
               (item, index) => (
                 <a key={index} className={` ${index === 1 && "mt-4"}`}>
@@ -73,7 +79,7 @@ function Footer() {
                 </a>
               ))}
             </div>
-            <div className="flex flex-col font-['Neue_Montreal'] mt-8 capitalize px-24">
+            <div className="flex flex-col font-['Neue_Montreal'] mt-8 capitalize lg:px-24">
               {[
                 "m:",
                 "Home",
@@ -89,7 +95,7 @@ function Footer() {
               ))}
             </div>
           </div>
-          <div className="flex flex-col font-['Neue_Montreal']">
+          <div className="flex flex-col font-['Neue_Montreal'] ">
             {["E:", "hello@ochi.design"].map((item, index) => (
               <a
                 key={index}
@@ -99,11 +105,11 @@ function Footer() {
               </a>
             ))}
           </div>
-          <div className="flex justify-between py-10 text-gray-400">
+          <div className="flex max-[640px]:flex-col justify-between py-10 text-gray-400">
             <div className="flex flex-col font-['Neue_Montreal'] capitalize ">
               © ochi design 2024. Legal Terms
             </div>
-            <div className="flex flex-col font-['Neue_Montreal'] capitalize px-12">
+            <div className="flex flex-col font-['Neue_Montreal'] capitalize lgpx-12">
               Website by Obys
             </div>
           </div>

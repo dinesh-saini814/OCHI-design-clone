@@ -22,7 +22,7 @@ function PlayEyes() {
         data-scroll
         data-scroll-section
         data-scroll-speed="-.5"
-        className="relative w-full h-full bg-cover bg-center bg-play-eye-bg"
+        className="relative w-full h-[15rem] lg:h-full lg:bg-cover bg-no-repeat bg-contain bg-center bg-play-eye-bg"
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <div className="w-[15vw] h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">
@@ -33,7 +33,7 @@ function PlayEyes() {
                 }}
                 className="line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-5  "
               >
-                <div className=" w-5 h-5 bg-zinc-100 rounded-full "></div>
+                <div className=" w-3 h-3 lg:w-5 lg:h-5 bg-zinc-100 rounded-full "></div>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ function PlayEyes() {
                 }}
                 className="line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-5  "
               >
-                <div className=" w-5 h-5 bg-zinc-100 rounded-full "></div>
+                <div className=" w-3 h-3 lg:w-5 lg:h-5 bg-zinc-100 rounded-full "></div>
               </div>
             </div>
           </div>

@@ -1,9 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { FiMenu } from "react-icons/fi"; // Importing a menu icon from react-icons
 
 function Navbar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State to handle menu toggle
   const controls = useAnimation();
   const navbarRef = useRef();
 
@@ -24,15 +26,21 @@ function Navbar() {
     controls.start({ y: visible ? 0 : -navbarRef.current.offsetHeight });
   }, [visible, controls]);
 
+  // Function to toggle mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <motion.div
       ref={navbarRef}
       initial={{ y: 0 }}
       animate={controls}
       transition={{ duration: 0.3 }}
-      className="fixed z-40 w-full px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between"
+      className="fixed z-40 w-full px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between items-center"
       style={{ backdropFilter: visible ? "blur(5px)" : "none" }}
     >
+      {/* Logo Section */}
       <div className="logo">
         <svg
           width="72"
@@ -63,18 +71,46 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-7 py-2 px-7">
+
+      {/* Links Section */}
+      <div className="hidden md:flex gap-7 py-2 px-7">
         {["Services", "Our work", "About us", "Insights", "Contact us"].map(
           (item, index) => (
             <a
               key={index}
-              className={`text-md  font-regular ${index === 4 && "ml-40"}`}
+              href={`#${item.toLowerCase().replace(" ", "-")}`} // Create links for each section
+              className={`text-md font-regular ${index === 4 && "ml-40"}`}
             >
               {item}
             </a>
           )
         )}
       </div>
+
+      {/* Mobile Menu Icon */}
+      <div className="flex md:hidden">
+        <button onClick={toggleMobileMenu} className="text-3xl">
+          <FiMenu />
+        </button>
+      </div>
+
+      {/* Mobile Menu (visible on toggle) */}
+      {isMobileMenuOpen && (
+        <div className="absolute top-16 right-0 w-48 bg-white shadow-lg rounded-md p-5 md:hidden">
+          {["Services", "Our work", "About us", "Insights", "Contact us"].map(
+            (item, index) => (
+              <a
+                key={index}
+                href={`#${item.toLowerCase().replace(" ", "-")}`} // Link to the sections
+                className="block text-md py-2"
+                onClick={() => setIsMobileMenuOpen(false)} // Close menu on click
+              >
+                {item}
+              </a>
+            )
+          )}
+        </div>
+      )}
     </motion.div>
   );
 }

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@craco/craco": "^7.1.0",
+    "@vercel/speed-insights": "^1.0.12",
     "font-awesome": "^4.7.0",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
