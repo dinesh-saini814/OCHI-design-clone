@@ -10,7 +10,7 @@ function LandingPage() {
       data-scroll-speed="-.5"
       className="w-full h-screen bg-background text-charcoal pt-1"
     >
-      <div className="textstructure mt-36 px-14 ">
+      <div className="textstructure mt-36 max-[640px]:px-5 px-14 lg:mb-2 mb-32">
         {["We Create", "Eye-Opening", "Presentations"].map((item, index) => {
           return (
             <div className="masker">
@@ -20,10 +20,10 @@ function LandingPage() {
                     initial={{ width: 0 }}
                     animate={{ width: "9vw" }}
                     transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                    className="mr-[1vw] w-[9vw] h-[6vw] rounded-md bg-cover bg-[url('src/assets/content.jpg')] relative top-[1.05vw]"
+                    className="mr-[1vw] w-[9vw] h-[6vw] max-[640px]:h-[1.9rem] rounded-md bg-cover bg-[url('https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg')] relative top-[1.05vw]"
                   ></motion.div>
                 )}
-                <h1 className="uppercase text-[9.5vw] leading-[7.3vw] tracking-normal font-['Test_Founders_Grotesk_X_Condensed'] ">
+                <h1 className="uppercase text-[12vw] lg:text-[9.5vw] max-[640px]:leading-[5vh] leading-[9vw] lg:leading-[7.3vw] tracking-normal max-[640px]:tracking-tighter max-[640px]:font-bold font-['Test_Founders_Grotesk_X_Condensed'] ">
                   {item}
                 </h1>
               </div>
@@ -31,7 +31,7 @@ function LandingPage() {
           );
         })}
       </div>
-      <div className="absolute top-1/4 right-0">
+      <div className="absolute top-1/4 right-0 max-[640px]:scale-50 max-[640px]:top-[5rem] max-[640px]:w-8">
         <svg width="53.08" height="171.358">
           <path
             class="js-color-bg"
@@ -43,7 +43,7 @@ function LandingPage() {
           </g>
         </svg>
       </div>
-      <div className="border-t-[1px] font-['Neue_Montreal'] border-zinc-400 mt-20 flex justify-between py-4 px-16">
+      <div className="border-t-[1px] font-['Neue_Montreal'] border-zinc-400 max-[640px]:mt-[15rem] min-[1500px]:mt-[5rem] max-[640px]:gap-9 mt-20 flex max-[640px]:flex-col justify-between max-[640px]:justify-start py-4 max-[640px]:px-5 px-16">
         {[
           "For public and private companies",
           "From the first pitch to IPO",

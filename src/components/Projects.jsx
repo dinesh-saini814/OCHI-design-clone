@@ -47,7 +47,7 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">fyde</p>
           </div>
-          <div className="cardcontainer relative w-full h-[86vh]">
+          <div className="cardcontainer relative w-full h-[68vh] lg:h-[86vh]">
             <h1 className="absolute overflow-hidden flex left-full text-[21vh] -translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
               {"FYDE".split("").map((item, index) => (
                 <motion.span
@@ -91,7 +91,7 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">vise</p>
           </div>
-          <div className="cardcontainer relative w-full h-[86vh]">
+          <div className="cardcontainer relative w-full h-[68vh] lg:h-[86vh]">
             <h1 className="absolute flex overflow-hidden right-full text-[21vh] translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
               {"VISE".split("").map((item, index) => (
                 <motion.span
@@ -136,7 +136,7 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">trawa</p>
           </div>
-          <div className="cardcontainer relative w-full h-[86vh]">
+          <div className="cardcontainer relative w-full h-[68vh] lg:h-[86vh]">
             <h1 className="absolute overflow-hidden flex left-full text-[21vh] -translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
               {"TRAWA".split("").map((item, index) => (
                 <motion.span
@@ -184,7 +184,7 @@ function Projects() {
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">premium blend</p>
           </div>
-          <div className="cardcontainer relative w-full h-[86vh]">
+          <div className="cardcontainer relative w-full h-[68vh] lg:h-[86vh]">
             <h1 className="absolute uppercase flex overflow-hidden right-full text-[21vh] translate-x-1/2 top-1/2 text-textGreen -translate-y-1/2 z-10 leading-none font-['Test_Founders_Grotesk_X_Condensed']">
               {"premium blend".split("").map((item, index) => (
                 <motion.span
