@@ -47,7 +47,8 @@ function Introduction() {
           <div className="lg:w-1/2 w-full lg:h-[29rem] lg:mx-10 mt-3.5 rounded-lg mb-12 p-5 lg:p-0">
             <img
               className=" w-full h-full rounded-lg "
-              src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
+              src="https://i.ibb.co/mr0x8dQK/Homepage-Photo-663x469.jpg"
+              alt="Introduction"
             />
           </div>
         </div>

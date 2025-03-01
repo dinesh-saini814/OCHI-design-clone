@@ -37,7 +37,7 @@ function Navbar() {
       initial={{ y: 0 }}
       animate={controls}
       transition={{ duration: 0.3 }}
-      className="fixed z-40 w-full px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between items-center"
+      className="fixed z-40 w-full px-4 sm:px-12 py-3 text-charcoal font-['Neue_Montreal'] flex justify-between items-center"
       style={{ backdropFilter: visible ? "blur(5px)" : "none" }}
     >
       {/* Logo Section */}
@@ -88,7 +88,7 @@ function Navbar() {
       </div>
 
       {/* Mobile Menu Icon */}
-      <div className="flex md:hidden">
+      <div className="flex sm:hidden">
         <button onClick={toggleMobileMenu} className="text-3xl">
           <FiMenu />
         </button>

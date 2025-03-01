@@ -17,12 +17,12 @@ function PlayEyes() {
   });
 
   return (
-    <div className="w-full h-screen overflow-hidden">
+    <div className="w-full sm:h-screen h-50 sm:overflow-hidden ">
       <div
         data-scroll
         data-scroll-section
         data-scroll-speed="-.5"
-        className="relative w-full h-[15rem] lg:h-full lg:bg-cover bg-no-repeat bg-contain bg-center bg-[url('https://ochi.design/wp-content/uploads/2022/05/Top-Viewbbcbv-1-1440x921.jpg')]"
+        className="relative w-full h-[15rem] lg:h-full lg:bg-cover bg-no-repeat bg-contain bg-center bg-[url('https://i.ibb.co/vxfyP9Mm/Top-Viewbbcbv-1-1440x921.jpg')]"
       >
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <div className="w-[15vw] h-[15vw] flex items-center justify-center bg-zinc-100 rounded-full">

@@ -3,8 +3,8 @@ import React from "react";
 function Cards() {
   return (
     <div className="w-full h-screen flex max-[640px]:flex-col items-center max-[640px]:px-5 lg:px-12 gap-4 ">
-      <div className="cardcontainer w-full h-[15rem] lg:w-1/2 lg:h-[62vh] ">
-        <div className="card relative rounded-xl w-full h-full bg-card flex items-center justify-center">
+      <div className="cardcontainer w-full h-[18rem] lg:w-1/2 lg:h-[62vh] ">
+        <div className="card relative rounded-xl w-full sm:h-full h-[18rem] bg-card flex items-center justify-center">
           <img
             className="h-16"
             src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
