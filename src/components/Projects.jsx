@@ -87,7 +87,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col align-middle mt-12 ">
+        <div className="w-full flex flex-col align-middle mt-12 sm:mt-0">
           <div className="flex gap-x-2 align-middle text-sm ">
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">vise</p>
