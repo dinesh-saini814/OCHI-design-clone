@@ -60,35 +60,34 @@ function Projects() {
                 </motion.span>
               ))}
             </h1>
-            <div className="">
-              <motion.div
-                onHoverStart={() => handleHoverStart(0)}
-                onHoverEnd={() => handleHoverEnd(0)}
-                whileHover={{ scale: 0.95 }}
-                transition={{ ease: [0.37, 0, 0.63, 1], duration: 0.3 }}
-                className="cards w-full h-full overflow-hidden bg-gray-500 rounded-lg cursor-pointer"
-              >
-                <img
-                  className="w-full h-full bg-cover"
-                  src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
-                />
-              </motion.div>
-              <div className="flex flex-row flex-wrap gap-[.6rem] absolute py-4 text-sm">
-                {/* Map over the card1 array to generate buttons */}
-                {card1.map((shortcut, index) => (
-                  <button
-                    key={index}
-                    className={`h-[1.9rem] border-[1px] border-gray-600 rounded-2xl uppercase ${shortcut.width}`}
-                  >
-                    {shortcut.label}
-                  </button>
-                ))}
-              </div>
+
+            <motion.div
+              onHoverStart={() => handleHoverStart(0)}
+              onHoverEnd={() => handleHoverEnd(0)}
+              whileHover={{ scale: 0.95 }}
+              transition={{ ease: [0.37, 0, 0.63, 1], duration: 0.3 }}
+              className="cards w-full h-full overflow-hidden bg-gray-500 rounded-lg cursor-pointer"
+            >
+              <img
+                className="w-full h-full bg-cover"
+                src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
+              />
+            </motion.div>
+            <div className="flex flex-row flex-wrap gap-[.6rem] absolute py-4 text-sm">
+              {/* Map over the card1 array to generate buttons */}
+              {card1.map((shortcut, index) => (
+                <button
+                  key={index}
+                  className={`h-[1.9rem] border-[1px] border-gray-600 rounded-2xl uppercase ${shortcut.width}`}
+                >
+                  {shortcut.label}
+                </button>
+              ))}
             </div>
           </div>
         </div>
 
-        <div className="w-full flex flex-col align-middle  ">
+        <div className="w-full flex flex-col align-middle mt-12 ">
           <div className="flex gap-x-2 align-middle text-sm ">
             <RiCircleFill className=" text-xs mb-4 mt-1" />
             <p className="uppercase">vise</p>
